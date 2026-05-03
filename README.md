@@ -1,159 +1,122 @@
-#<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>استبيان مشروعنا </title>
+<title>استبيان طموحات وظيفية</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  direction: rtl;
-  background: #0b1120;
-  color: #e2e8f0;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+  }
 
-/* خلفية شبكة تقنية */
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image:
-    linear-gradient(rgba(59,130,246,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148,163,184,0.08) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
+  .container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+  }
 
-.container {
-  max-width: 850px;
-  margin: 80px auto;
-  background: rgba(15,23,42,0.9);
-  padding: 45px;
-  border-radius: 18px;
-  border: 1px solid #334155;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-}
+  h1 {
+    text-align: center;
+    color: #22c55e;
+  }
 
-h1 {
-  text-align: center;
-  color: #93c5fd;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
+  .subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+  }
 
-.subtitle {
-  text-align: center;
-  color: #cbd5e1;
-  margin-bottom: 40px;
-  font-size: 14px;
-}
+  label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
 
-label {
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
 
-.options {
-  line-height: 2;
-  color: #f1f5f9;
-}
+  .options {
+    margin-top: 10px;
+  }
 
-textarea {
-  width: 100%;
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #475569;
-  background-color: #0b1120;
-  color: #f8fafc;
-  font-family: inherit;
-}
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #22c55e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-button {
-  margin-top: 40px;
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #3b82f6, #94a3b8);
-  color: #0b1120;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
+  button:hover {
+    background: #16a34a;
+  }
 
-button:hover {
-  opacity: 0.9;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 35px;
-  font-size: 13px;
-  color: #94a3b8;
-}
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #94a3b8;
+  }
 </style>
+
 </head>
 
 <body>
 
-<div class="background"></div>
-
 <div class="container">
 
-<h1>تقييم عرض المشروع</h1>
+  <h1>استبيان الطموحات الوظيفية</h1>
 
-<p class="subtitle">
-نقدر مشاركتكم في تقييم عرض مشروعنا، آراؤكم تساعدنا في التطوير والتحسين 🤍.
-</p>
+  <p class="subtitle">
+    ضمن رؤية المملكة 2030، نهدف لفهم طموحات الشباب المهنية وتوجهاتهم المستقبلية 🤍
+  </p>
 
-<form> <label>اكتبِ اسمك:</label>
+  <form> <label>اكتب اسمك:</label>
 <input type="text" placeholder="اسمك هنا" style="
 width:100%;
 padding:12px;
 border-radius:10px;
 border:1px solid #475569;
 background:#0f172a;
-color:white;
-">
+color:white;">
 
-<label>كيف تقيمين العرض بشكل عام؟</label>
-<div class="options">
-<input type="radio" name="overall"> ممتاز<br>
-<input type="radio" name="overall"> جيد جداً<br>
-<input type="radio" name="overall"> جيد<br>
-<input type="radio" name="overall"> يحتاج تطوير
-</div>
+    <label>ما هو المجال الذي تطمحين له مستقبلاً؟</label>
+    <input type="text" placeholder="مثال: طب، تقنية، تصميم...">
 
-<label>هل كانت المعلومات واضحة وسهلة الفهم؟</label>
-<div class="options">
-<input type="radio" name="clarity"> واضحة جداً<br>
-<input type="radio" name="clarity"> نوعاً ما<br>
-<input type="radio" name="clarity"> غير واضحة
-</div>
+    <label>هل تفضلين العمل الحكومي أو الخاص؟</label>
+    <div class="options">
+      <input type="radio" name="job"> حكومي<br>
+      <input type="radio" name="job"> خاص<br>
+      <input type="radio" name="job"> لا أعلم
+    </div>
 
-<label>هل استفدتِ من العرض؟</label>
-<div class="options">
-<input type="radio" name="benefit"> استفدت كثيراً<br>
-<input type="radio" name="benefit"> استفدت قليلاً<br>
-<input type="radio" name="benefit"> لم أستفد
-</div>
+    <label>ما أهم شيء تبحثين عنه في الوظيفة؟</label>
+    <textarea rows="4" placeholder="راتب، راحة، تطوير، شغف..."></textarea>
 
-<label>في حال وجود ملاحظات أو نقاط تحتاج تحسين:</label>
-<textarea rows="4"></textarea>
+    <button type="submit">إرسال</button>
 
-<label>رسالة إلى طاقم المشروع:</label>
-<textarea rows="4"></textarea> 
+  </form>
 
-<button type="submit">إرسال التقييم</button>
-
-</form>
-
-<div class="footer">
-جميع الآراء محل تقدير .. شكرا لوقتكم 🤍
-</div>
+  <div class="footer">
+    مشروع طلابي مرتبط برؤية 2030 - شكراً لمشاركتك ✨
+  </div>
 
 </div>
 
