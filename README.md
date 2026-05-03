@@ -145,7 +145,7 @@ color:white;
 <textarea rows="4"></textarea>
 
 <label>رسالة إلى طاقم المشروع:</label>
-<textarea rows="4"></textarea>
+<textarea rows="4"></textarea> 
 
 <button type="submit">إرسال التقييم</button>
 
