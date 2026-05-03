@@ -172,7 +172,7 @@ line-height:1.8;
 
 <form>
 
-<div class="question">الاسم الكريم:</div>
+<div class="question">   اسمك الجميل:</div>
 <input type="text" placeholder="يرجى كتابة الاسم هنا">
 
 <div class="question">ما مدى تميز فكرة المشروع؟</div>
