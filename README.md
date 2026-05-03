@@ -2,78 +2,75 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>استبيان طموحات وظيفية</title>
+<title> استبيان </title>
 
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    direction: rtl;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-  }
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  direction: rtl;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #e5e7eb;
+}
 
-  .container {
-    max-width: 700px;
-    margin: 60px auto;
-    background: rgba(255,255,255,0.08);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-  }
+.container {
+  max-width: 800px;
+  margin: 70px auto;
+  background: rgba(15,23,42,0.9);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #334155;
+}
 
-  h1 {
-    text-align: center;
-    color: #22c55e;
-  }
+h1 {
+  text-align: center;
+  color: #93c5fd;
+}
 
-  .subtitle {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #cbd5e1;
-  }
+.subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
 
-  label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
+label {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-  }
+.options {
+  line-height: 2;
+}
 
-  .options {
-    margin-top: 10px;
-  }
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+}
 
-  button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: #22c55e;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  button:hover {
-    background: #16a34a;
-  }
-
-  .footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #94a3b8;
-  }
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #94a3b8;
+}
 </style>
 
 </head>
@@ -82,13 +79,13 @@
 
 <div class="container">
 
-  <h1>استبيان الطموحات الوظيفية</h1>
+<h1> تقييم مشروعنا <h1/>
 
-  <p class="subtitle">
-    ضمن رؤية المملكة 2030، نهدف لفهم طموحات الشباب المهنية وتوجهاتهم المستقبلية 🤍
-  </p>
+<p class="subtitle">
+نقدر رأيكم عن مشروع تخرجنا ، لاتستحين وقيمي بكل أريحية في سبيل إتقاننا التام للمشاريع في المستقبل !🤍
+</p>
 
-  <form> <label>اكتب اسمك:</label>
+<form> <label>اكتب اسمك:</label>
 <input type="text" placeholder="اسمك هنا" style="
 width:100%;
 padding:12px;
@@ -97,26 +94,41 @@ border:1px solid #475569;
 background:#0f172a;
 color:white;">
 
-    <label>ما هو المجال الذي تطمحين له مستقبلاً؟</label>
-    <input type="text" placeholder="مثال: طب، تقنية، تصميم...">
+<label>كيف توصفين العرض؟</label>
+<div class="options">
+<input type="radio" name="q1"> ممتاز<br>
+<input type="radio" name="q1"> جيد جداً<br>
+<input type="radio" name="q1"> جيد<br>
+<input type="radio" name="q1"> يحتاج تطوير
+</div>
 
-    <label>هل تفضلين العمل الحكومي أو الخاص؟</label>
-    <div class="options">
-      <input type="radio" name="job"> حكومي<br>
-      <input type="radio" name="job"> خاص<br>
-      <input type="radio" name="job"> لا أعلم
-    </div>
+<label>هل كانت المعلومات واضحة؟</label>
+<div class="options">
+<input type="radio" name="q2"> نعم<br>
+<input type="radio" name="q2"> نوعاً ما<br>
+<input type="radio" name="q2"> لا
+</div>
 
-    <label>ما أهم شيء تبحثين عنه في الوظيفة؟</label>
-    <textarea rows="4" placeholder="راتب، راحة، تطوير، شغف..."></textarea>
+<label>هل استفدتِ من العرض؟</label>
+<div class="options">
+<input type="radio" name="q3"> نعم كثيراً<br>
+<input type="radio" name="q3"> قليلاً<br>
+<input type="radio" name="q3"> لا
+</div>
 
-    <button type="submit">إرسال</button>
+<label>الملاحظات:</label>
+<textarea rows="4"></textarea>
 
-  </form>
+<label>رسالة لطاقم المشروع:</label>
+<textarea rows="4"></textarea>
 
-  <div class="footer">
-    مشروع طلابي مرتبط برؤية 2030 - شكراً لمشاركتك ✨
-  </div>
+<button type="submit">إرسال</button>
+
+</form>
+
+<div class="footer">
+جميع الآراء محل تقدير ، شكرًا لوقتكم 🤍
+</div>
 
 </div>
 
